@@ -30,7 +30,6 @@ require("lazy").setup({
     version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "flexoki" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -49,22 +48,5 @@ require("lazy").setup({
         "zipPlugin",
       },
     },
-  },
-})
-
-require("lspconfig").ts_ls.setup({
-  init_options = {
-    plugins = {
-      {
-        name = "@vue/typescript-plugin",
-        location = "/usr/local/lib/node_modules/@vue/typescript-plugin",
-        languages = { "javascript", "typescript", "vue" },
-      },
-    },
-  },
-  filetypes = {
-    "javascript",
-    "typescript",
-    "vue",
   },
 })
