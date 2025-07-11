@@ -8,9 +8,15 @@ return {
     lazy = false,
   },
   {
+    "catppuccin/nvim",
+    lazy = false,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "flexoki",
+      -- colorscheme = "catppuccin-mocha",
+      colorscheme = "catppuccin-latte",
+      -- colorscheme = "flexoki",
       -- colorscheme = "flexoki-dawn",
       -- colorscheme = "flexoki-moon",
     },
